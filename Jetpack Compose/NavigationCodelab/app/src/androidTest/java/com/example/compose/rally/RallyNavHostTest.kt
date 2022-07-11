@@ -65,6 +65,9 @@ class RallyNavHostTest {
                 navController.navigate(RallyScreen.Accounts.name)
             }
         }
+        composeTestRule
+            .onNodeWithContentDescription("Accounts Screen")
+            .assertIsDisplayed()
     }
 
 }
